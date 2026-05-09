@@ -3,25 +3,122 @@
 }
 
 body{
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #040d15;
+    color: #e8f0fb;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    width: 80vw;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    overflow-x:hidden;
+    min-width: 480px;
+    gap: 120px;
+}
+h1{ font-size: 3.2rem;}
+.btn{
+    font-size: 1.2rem;
+    color: #e8f0fb;
+    padding: 12px 24px;
+    border-radius: 6px;
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-.leftLinks{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: right;
-    list-style: none;
-}
-.leftLinks li{
-    text-decoration: none;
-}
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        color: #e8f0fb;
+        flex: 1;
+        flex-wrap: wrap;
+        padding: 12px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .nav a{
+            text-decoration: none;
+            color: #e8f0fb;
+
+        }
+
+        .nav .logo{
+            font-size: 2rem;
+            font-weight: 600;
+
+        }
+        .rightLinks{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            font-size: 1.2rem;
+            justify-content: right;
+            gap:12px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+            .rightLinks a{
+                display: flex;
+                flex: 0;
+            }
+    section{
+        display: flex;
+        flex: 1;
+        padding: 12px;
+    }
+    section#hero{
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+    }
+        .about{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-around;
+            gap: 12px;
+        }
+            .about h1, .about p{
+                
+                padding: 0;
+                margin: 0;
+            }
+            .about p{font-size: 1.6rem; text-wrap: balance;}
+            .btn.blue{
+                background-color: #6942df;
+            }
+        .abtImg{
+            height: 600px;
+            width: 600px;
+            background-color: #271993;
+        }
+    section#features{
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+        .ftBox{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: center;
+            gap: 12px;
+        }
+            .card{
+                display: flex;
+                flex-direction: column;
+                flex: 0 1 auto;
+                align-items: center;
+                padding: 12px;
+                font-size: 1.6rem;
+            }
+            .card .icon{
+                display: flex;
+                flex: 0 0 auto;
+                font-size: 6rem;
+            }
+            .card .ftext{
+                display: flex;
+                flex: 0;
+            }
