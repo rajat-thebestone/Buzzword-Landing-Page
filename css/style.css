@@ -102,7 +102,7 @@ p{font-size: 1.2rem; text-wrap: balance;}
         .abtImg{
             display: flex;
             flex-direction: column;
-            flex: 0 1 600px;
+            flex: 1 1 500px;
             background-color: #271993;
             border-radius: 12px;
             overflow: hidden;
