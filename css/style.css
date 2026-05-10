@@ -1,6 +1,6 @@
-*{
+/* *{
     border: solid 1px red;
-}
+} */
 
 body{
     display: flex;
@@ -13,15 +13,24 @@ body{
     margin: auto;
     overflow-x:hidden;
     min-width: 480px;
-    gap: 120px;
+    gap: 60px;
 }
 h1{ font-size: 3.2rem;}
+h3{ font-size: 2rem;}
+p{font-size: 1.6rem; text-wrap: balance;}
 .btn{
     font-size: 1.2rem;
     color: #e8f0fb;
     padding: 12px 24px;
     border-radius: 6px;
+    border: #271993;
+    
 }
+.btn.blue{
+    background-color: #271993;
+    box-shadow: #271993;
+}
+.btn.blue:hover{box-shadow: #27199380 0px 4px 12px; transform: scale(1.05); transition: ease-in 0.2s;}
 
 
     .nav{
@@ -69,6 +78,7 @@ h1{ font-size: 3.2rem;}
         flex-direction: row;
         flex-wrap: wrap-reverse;
         align-items: center;
+        gap: 36px;
     }
         .about{
             display: flex;
@@ -78,47 +88,79 @@ h1{ font-size: 3.2rem;}
             gap: 12px;
         }
             .about h1, .about p{
-                
                 padding: 0;
                 margin: 0;
             }
-            .about p{font-size: 1.6rem; text-wrap: balance;}
-            .btn.blue{
-                background-color: #6942df;
-            }
+            
         .abtImg{
             height: 600px;
             width: 600px;
             background-color: #271993;
+            border-radius: 12px;
         }
     section#features{
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        padding: 150px 12px;
+        background-color: #6942df;
+        border-radius: 12px;
+    }
+        .ftBox{
+            display: flex;
+            flex-direction: row;
+            flex: 1 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+        }
+            .card{
+                display: flex;
+                flex-direction: column;
+                flex: 0 1 250px;
+                align-items: center;
+                padding: 24px;
+                font-size: 1.6rem;
+                border: #271993 solid 1px;
+                border-radius: 12px;
+                gap: 36px;
+            }
+            .card:hover{
+            box-shadow: #27199380 0px 13px 27px -5px,#27199380 0px 8px 16px -8px;
+            transition: 0.2s ease-in;
+
+            }
+            .card .icon{
+                display: flex;
+                flex: 0 0 auto;
+                font-size: 6rem;
+                margin: 0;
+                padding: 12px;
+            }
+            .card .ftext{
+                display: flex;
+                flex: 0;
+                text-align: center;
+            }
+    section#review{
         flex-direction: column;
         flex: 1;
         justify-content: center;
         align-items: center;
         gap: 12px;
     }
-        .ftBox{
-            display: flex;
-            flex-direction: row;
-            flex: 1;
-            justify-content: center;
-            gap: 12px;
-        }
-            .card{
-                display: flex;
-                flex-direction: column;
-                flex: 0 1 auto;
-                align-items: center;
-                padding: 12px;
-                font-size: 1.6rem;
-            }
-            .card .icon{
-                display: flex;
-                flex: 0 0 auto;
-                font-size: 6rem;
-            }
-            .card .ftext{
-                display: flex;
-                flex: 0;
-            }
+    .reviewBox{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        border: #271993 solid 1px;
+        border-radius: 12px;
+        padding: 24px;
+    }
+    .stars{
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        color: #6942df;
+    }
