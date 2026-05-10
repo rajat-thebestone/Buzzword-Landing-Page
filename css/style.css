@@ -16,9 +16,9 @@ body{
     min-width: 480px;
     gap: 60px;
 }
-h1{ font-size: 5rem;}
-h3{ font-size: 3rem;}
-p{font-size: 1.6rem; text-wrap: balance;}
+h1{ font-size: 3.6rem;}
+h3{ font-size: 2.4rem;}
+p{font-size: 1.2rem; text-wrap: balance;}
 .btn{
     font-size: 1.2rem;
     padding: 12px 24px;
@@ -90,7 +90,7 @@ p{font-size: 1.6rem; text-wrap: balance;}
         .about{
             display: flex;
             flex-direction: column;
-            flex: 1;
+            flex: 2 1 auto;
             justify-content: space-around;
             gap: 32px;
         }
@@ -114,17 +114,18 @@ p{font-size: 1.6rem; text-wrap: balance;}
         .abtImg div{padding: 3px;}
     section#features{
         flex-direction: column;
-        flex: 1;
+        flex: 1 0 400px;
         justify-content: space-between;
         align-items: center;
-        padding: 150px 12px;
+        padding: 48px 12px;
         background-color: #6942df;
         border-radius: 12px;
+        gap: 32px;
     }
         .ftBox{
             display: flex;
             flex-direction: row;
-            flex: 1 0 auto;
+            flex: 0 1 auto;
             flex-wrap: wrap;
             justify-content: center;
             gap: 36px;
@@ -132,7 +133,7 @@ p{font-size: 1.6rem; text-wrap: balance;}
             .card{
                 display: flex;
                 flex-direction: column;
-                flex: 0 1 250px;
+                flex: 0 1 200px;
                 align-items: center;
                 padding: 24px;
                 font-size: 1.6rem;
@@ -197,11 +198,11 @@ p{font-size: 1.6rem; text-wrap: balance;}
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 100% - 12px;
+            width: 100% ;
             border: 1px solid #e8f0fb;
             border-radius:12px;
             gap: 32px;
-            padding: 12px;
+            margin: 12px;
         }
 
         .signLeft{
